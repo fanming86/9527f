@@ -1,3 +1,4 @@
+
 ---
 
 title: Python和微信之获取好友昵称并制作wordcloud
@@ -69,3 +70,4 @@ itchat.send_image("wechat_cloud.png", 'filehelper')
 至此，打开你的手机，进入到文件传输助手，你会收到一张图片，这就是使用微信好友昵称制作的词云，下面附上一张我本人的
 ![这里写图片描述](http://img.blog.csdn.net/20170721154128645?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ![这里写图片描述](http://img.blog.csdn.net/20170721154156691?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
