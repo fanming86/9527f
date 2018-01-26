@@ -1,7 +1,7 @@
 ---
 date: 2017-06-05 22:34:45
-title: centos7安装nagios监控服务
-tags: linux
+title: nagios监控（一）之centos7安装nagios监控服务
+tags: [linux,nagios]
 categories: linux
 
 ---
