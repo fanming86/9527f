@@ -30,7 +30,7 @@ site:
     enabled: true
     width: 40
     height: 40
-    url: ../images/logo.png
+    url: https://ws1.sinaimg.cn/large/006h9k0Tly1fnuzo2kpefj3050050q2x.jpg
   title: FanMing # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
@@ -167,7 +167,7 @@ fb_app_id:
 # profile
 profile:
   enabled: true # Whether to show profile bar
-  avatar: images/avatar.jpg
+  avatar: https://ws1.sinaimg.cn/large/006h9k0Tly1fnuzo2kpefj3050050q2x.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: fanming
   author_title: Linux Operations and maintenance engineer
