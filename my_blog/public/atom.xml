@@ -121,6 +121,34 @@
   </entry>
   
   <entry>
+    <title>centos7部署ftp服务器</title>
+    <link href="http://fanming.shop/2017/09/25/DeployTheFtpServer/"/>
+    <id>http://fanming.shop/2017/09/25/DeployTheFtpServer/</id>
+    <published>2017-09-25T03:01:16.000Z</published>
+    <updated>2018-01-28T03:33:09.007Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>安装vsftpd<br>　　1）安装vsftpd： yum install vsftpd -y<br>　　2）启动vsftpd： systemctl start vsftpd<br>　　3）设置开机启动：systemctl enable vsftpd</p></li><li><p>创建用户和共享目录<br> 1）创建一个系统本地用户，指定该用户的家目录，并使其不能登录</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd -d /home/vsftp -s /sbin/nologin ftpuser  #创建用户 </span><br><span class="line">passwd ftpuser     #设置密码</span><br></pre></td></tr></table></figure><p>2）默认的ftp共享目录为/var/ftp，若要该为指定的目录，可设置anon_root和local_root参数，详情看下一步</p></li><li>设置配置文件：vim /etc/vsftpd/vsftpd.conf <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//这里我们使用ftpuser用户的家目录作为本地用户访问的共享目录</span><br><span class="line">//使用/var/ftp 目录作为匿名用户访问的目录</span><br><span class="line">anonymous_enable=YES 　　　　                  #允许匿名访问</span><br><span class="line">anon_upload_enable=NO   　　　　               #上传</span><br><span class="line">anon_mkdir_write_enable=NO  　　        #创建</span><br><span class="line">anon_other_write_enable=NO               #删除</span><br><span class="line">anon_root=/var/ftp 　　　　　　　　 #匿名访问目录</span><br><span class="line">local_root=/home/vsftp              #本地用户访问目录</span><br><span class="line">local_enable=YES      　　　　   　# 允许使用本地帐户进行FTP用户登录验证</span><br><span class="line">write_enable=YES　　　　　　　　#允许本地用户写入</span><br><span class="line">local_umask=022   　　　　　　　　   # 设置本地用户默认文件掩码022</span><br></pre></td></tr></table></figure></li></ol><p><img src="http://img.blog.csdn.net/20180127174851601?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p><ol><li>重启ftp服务，便可以访问ftp服务器了<br><strong><em>使用本地用户登录</em></strong><br>ftp://user:password@192.168.13.128                 #在浏览器中使用本地用户登录<br><img src="http://img.blog.csdn.net/20180128101126488?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20180128104656933?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><strong><em>使用匿名用户登录</em></strong><br>ftp://192.168.13.128                #匿名用户访问，直接访问地址即可<br><img src="http://img.blog.csdn.net/20180128101251785?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20180128101958536?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzU2MjYyNQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装vsftpd&lt;br&gt;　　1）安装vsftpd： yum install vsftpd -y&lt;br&gt;　　2）启动vsftpd： systemctl start vsftpd&lt;br&gt;　　3）设置开机启动：systemctl enable vsftpd&lt;/p
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="http://fanming.shop/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://fanming.shop/tags/linux/"/>
+    
+      <category term="ftp" scheme="http://fanming.shop/tags/ftp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>nagios监控（二）之监控windows server服务器</title>
     <link href="http://fanming.shop/2017/06/06/windowsNagios/"/>
     <id>http://fanming.shop/2017/06/06/windowsNagios/</id>
