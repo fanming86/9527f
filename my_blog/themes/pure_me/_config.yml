@@ -107,18 +107,9 @@ github:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: youyan  # 启用哪种评论系统
-  disqus:  # enter disqus shortname here
+  type: youyan 
   youyan: 
     uid: 2156464 # enter youyan uid 
-  livere:
-    uid: # enter youyan uid 
-  gitment:
-    githubID: 
-    repo: 
-    ClientID: 
-    ClientSecret: 
-    lazy: false
 
 # douban 豆瓣书单
 # Api：
