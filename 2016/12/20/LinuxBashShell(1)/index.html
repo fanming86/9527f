@@ -16,15 +16,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>歸檔: 2017/11 | FanMing</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Fxj">
-<meta property="og:url" content="http://fanming.shop/archives/2017/11/index.html">
+  <title>Linux bash shell 基础知识 | FanMing</title>
+  <meta name="description" content="一、Shell基础知识 Shell是一个命令行解释器，它为用户提供了一个面向Linux内核发送请求以便运行程序的界面系统级程序，用户可以用Shell来启动、挂起、停止甚至是编写一些程序；  Shell还是一个功能相当强大的编程语言，易编写，易调试，灵活性较强，Shell是解释执行的脚本语言，在Shell中可以直接调用Linux系统命令 echo [选项] [输出内容] # 输出命令 # -e 支持">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux bash shell 基础知识">
+<meta property="og:url" content="http://fanming.shop/2016/12/20/LinuxBashShell(1)/index.html">
 <meta property="og:site_name" content="Fxj">
+<meta property="og:description" content="一、Shell基础知识 Shell是一个命令行解释器，它为用户提供了一个面向Linux内核发送请求以便运行程序的界面系统级程序，用户可以用Shell来启动、挂起、停止甚至是编写一些程序；  Shell还是一个功能相当强大的编程语言，易编写，易调试，灵活性较强，Shell是解释执行的脚本语言，在Shell中可以直接调用Linux系统命令 echo [选项] [输出内容] # 输出命令 # -e 支持">
+<meta property="og:updated_time" content="2018-03-24T09:52:15.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fxj">
+<meta name="twitter:title" content="Linux bash shell 基础知识">
+<meta name="twitter:description" content="一、Shell基础知识 Shell是一个命令行解释器，它为用户提供了一个面向Linux内核发送请求以便运行程序的界面系统级程序，用户可以用Shell来启动、挂起、停止甚至是编写一些程序；  Shell还是一个功能相当强大的编程语言，易编写，易调试，灵活性较强，Shell是解释执行的脚本语言，在Shell中可以直接调用Linux系统命令 echo [选项] [输出内容] # 输出命令 # -e 支持">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://fanming.shop/archives/2017/11/index.html">
+  <link rel="canonical" href="http://fanming.shop/2016/12/20/LinuxBashShell(1)/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Fxj" type="application/atom+xml">
   
@@ -347,68 +352,197 @@
   
   
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">歸檔: 2017/11</h1>
-	      <p class="text-muted">共 3 篇文章</p>
-	    </header>
-	    <div class="article-body">
-	      
+  <div class="content">
+  <article id="post-LinuxBashShell(1)" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
   
+    <h1 class="article-title" itemprop="name">
+      Linux bash shell 基础知识
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2016/12/20/LinuxBashShell(1)/" class="article-date">
+	  <time datetime="2016-12-20T07:50:23.000Z" itemprop="datePublished">2016-12-20</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link" href="/tags/Linux/">Linux</a>
+  </span>
+
+
+        
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+	<span class="article-read hidden-xs">
+    	<i class="icon icon-eye-fill" aria-hidden="true"></i>
+    	<span id="/2016/12/20/LinuxBashShell(1)/" class="leancloud_visitors"  data-flag-title="Linux bash shell 基础知识">0</span>
+    </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2016/12/20/LinuxBashShell(1)/#comments" class="article-comment-link">評論</a></span>
+        
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1,488(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 6(分)</span>
+	
+
+      </div>
+    </div>
+    <div class="article-entry markdown-body" itemprop="articleBody">
+      
+        <p><strong>一、Shell基础知识</strong><br> Shell是一个命令行解释器，它为用户提供了一个面向Linux内核发送请求以便运行程序的界面系统级程序，用户可以用Shell来启动、挂起、停止甚至是编写一些程序；<br>  Shell还是一个功能相当强大的编程语言，易编写，易调试，灵活性较强，Shell是解释执行的脚本语言，在Shell中可以直接调用Linux系统命令</p>
+<p>echo [选项] [输出内容] # 输出命令 # -e 支持反斜线控制的字符转换<br>第一个脚本<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#vi hello.sh</span><br><span class="line">#!/bin/bash</span><br><span class="line">#  The first program</span><br><span class="line">echo -e &quot;\e[1; 34m hello world. \e[0m&quot;  #打印带颜色的内容</span><br></pre></td></tr></table></figure></p>
+<p>执行脚本<br>a. 赋予执行权限，直接运行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 hello.sh</span><br><span class="line">./hello.sh</span><br></pre></td></tr></table></figure>
+<p>b. 通过Bash调用执行脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash hello.sh</span><br></pre></td></tr></table></figure>
+<p>二、Bash的基本功能</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">命令别名与快捷键 </span><br><span class="line">临时添加或删除别名 </span><br><span class="line">i. alias #查看系统中所有所有的命令别名 </span><br><span class="line">ii. alias 别名=‘原命令’ #设定命令别名 </span><br><span class="line">iii. unalias 别名 #删除别名</span><br><span class="line">别名永久生效 </span><br><span class="line">i. vi ~/.bashrc #写入环境变量配置文件，重启后生效 </span><br><span class="line">ii. source .bashrc #重新加载配置文件后，立即生效</span><br><span class="line">常用快捷键 </span><br><span class="line">i. ctrl+c 强制终止当前命令 </span><br><span class="line">ii. ctrl+l 清屏 （等同于clear） </span><br><span class="line">iii. ctrl+a 光标移动到命令行首 </span><br><span class="line">iv. ctrl+e 光标移动到命令行尾 </span><br><span class="line">v. ctrl+u 从光标所在位置删除到行首 </span><br><span class="line">vi. ctrl+z 把命令放入后台 </span><br><span class="line">vii. ctrl+r 在历史命令中搜索</span><br><span class="line">历史命令：history [选项] [历史命令保存文件] </span><br><span class="line">-c 清空历史命令 </span><br><span class="line">-w 把缓存中的历史命令写入历史命令保存文件 ~/.bash_history </span><br><span class="line">历史命令的调用： </span><br><span class="line">● 使用上、下箭头调用以前的历史命令 </span><br><span class="line">● 使用“!n”重复执行第n条历史命令 </span><br><span class="line">● 使用”!!”重复执行上一条命令 </span><br><span class="line">● 使用”!字串”重复执行最后一条以该字串开头的命令</span><br><span class="line">输出重定向</span><br><span class="line"></span><br><span class="line">标准输出重定向： </span><br><span class="line">i. 命令 &gt; 文件 #以覆盖的方式，把命令的正确输出输出到指定的文件或设备当中 </span><br><span class="line">ii. 命令 &gt;&gt; 文件 #以追加的方式，把命令的正确输出输出到指定的文件或设备当中</span><br><span class="line">标准错误输出重定向： </span><br><span class="line">i. 错误命令 2&gt;文件 #以覆盖的方式，把命令的错误输出输出到指定的文件或设备当中 </span><br><span class="line">ii. 错误命令 2 &gt;&gt;文件 #以追加的方式，把命令的错误输出输出到指定的文件或设备当中</span><br><span class="line">正确输出和错误输出同时保存 </span><br><span class="line">i. 命令 &gt; 文件 2 &gt;&amp;1 #以覆盖的方式，把正确输出和错误输出都保存在同一个文件当中 </span><br><span class="line">ii. 命令 &gt;&gt; 文件 2 &gt;&amp;1 #以追加的方式，把正确输出和错误输出都保存在同一个文件当中 </span><br><span class="line">iii. 命令 &amp;&gt;文件 #以覆盖的方式，把正确输出和错误输出都保存在同一个文件当中 </span><br><span class="line">iv. 命令 &amp;&gt;&gt;文件 #以追加的方式，把正确输出和错误输出都保存在同一个文件当中 </span><br><span class="line">v. 命令 &gt;&gt;文件1 2 &gt;&gt;文件2 #以追加的方式，把正确输出追加到文件1中，把错误的输出追加到文件2中</span><br><span class="line">输入重定向：wc [选项] [文件名] </span><br><span class="line">-c 统计字节数 </span><br><span class="line">-w 统计单词数 </span><br><span class="line">-l 统计行数 </span><br><span class="line">wc 直接输入内容，ctrl+d退出</span><br></pre></td></tr></table></figure>
+<p>多命令执行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">a. ； 命令1;命令2 #多命令顺序执行，命令之间没有任何逻辑联系 </span><br><span class="line">b. &amp;&amp; 命令1&amp;&amp;命令2 #逻辑与，只有当命令1正确执行，命令2才会执行 </span><br><span class="line">c. || 命令1||命令2 #逻辑或，只有当命令1执行不正确，命令2才会执行 </span><br><span class="line">d. 管道符： 命令1 | 命令2 #命令1的正确输出作为命令2的操作对象，例： </span><br><span class="line">i. ls -lh /etc | more 分屏显示ls查询的结果 </span><br><span class="line">ii. netstat -an | grep ESTABLISHED | wc -l #查询有多少个网络与服务器建立了连接</span><br><span class="line">通配符 </span><br><span class="line">a. ？ 匹配一个任意字符 </span><br><span class="line">b. * 匹配0个或任意多个任意字符，也就是可以匹配任何内容 </span><br><span class="line">c. [] 匹配中括号中任意一个字符。例如：[abc]代表一定匹配一个字符，或者是a,或者是b，或者是c。 </span><br><span class="line">d. [-] 匹配括号中任意一个字符，-代表一个范围。例如：[a-z]代表匹配一个小写字母 </span><br><span class="line">e. [^] 逻辑非，表示匹配不是中括号内的一个字符。例如：[^0-9]代表匹配一个不是数字的字符</span><br><span class="line">其它特殊符号 </span><br><span class="line">a. ‘ 单引号。在单引号中所有的特殊符号，如“$” 和”`”（反引号）都没有特殊含义 </span><br><span class="line">b. “” 双引号。在双引号中特殊符号都没有特殊含义，但是“$”、”`”、和”\”是例外，拥有”调用变量的值“、”引用命令“和”转义符“的特殊含义。 </span><br><span class="line">c. “ 反引号。反引号括起来的内容是系统命令，在Bash中会先执行它。和$()作用一样，不过推荐使用$(),因为反引号非常容易看错 </span><br><span class="line">d. $() 和反引号的作用一样，用来引用系统命令 </span><br><span class="line">e. # 在Shell脚本中，#开头的行代表注释 </span><br><span class="line">f. $ 用于调用变量的值，如需要调用变量name的值时，需要用$name的方式得到变量的值 </span><br><span class="line">g. \ 转义符，跟在\之后的特殊符号将失去特殊含义，变为普通字符。如$将输出”$“符号，而不是当作是变量引用。</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://fanming.shop/2016/12/20/LinuxBashShell(1)/" title="Linux bash shell 基础知识" target="_blank" rel="external">http://fanming.shop/2016/12/20/LinuxBashShell(1)/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/fanming86" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://ws1.sinaimg.cn/large/006h9k0Tly1fnuzo2kpefj3050050q2x.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/fanming86" target="_blank"><span class="text-dark">fanming</span><small class="ml-1x">Linux Operations and maintenance engineer</small></a></h3>
+        <div>个人简介。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
   
     
+  <section id="comments">
+  	
+       
+    <div id="uyan_frame"></div>
+
     
-      
-      
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2017" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2017
-            </a>
-            <!-- <a href="/archives/2017" class="archive-year">2017</a> -->
-          </h3>
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2017/03/08/部署flask/" title="centos环境下使用uwsgi&amp;nginx部署flask"><i class="icon icon-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;上一篇</a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2016/12/12/vim常用命令以及快捷键/" title="vim 常用命令以及快捷键">下一篇&nbsp;&nbsp;<i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning hidden-xs" data-toggle="modal" data-target="#donateModal"><span>賞</span></button>
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-tit">
+            <p>感謝您的支持，我會繼續努力的!</p>
+          </div>
+          <div class="donate-payimg">
+            <img src="/" alt="掃碼支持" title="掃一掃" />
+          </div>
+          <p class="text-muted mv">掃碼打賞，你說多少就多少</p>
+          <div class="donate-payselect">
+            <div class="pay_item checked" data-id="alipay" data-src="/">
+              <div class="radio">
+                <input type="radio" name="payment" id="input-alipay" value="alipay" checked>
+                <label class="pay_logo clickable" for="input-alipay"><img src="/" alt="支付寶" /></label>
+              </div>
+            </div>
+            <div class="pay_item" data-id="weipay" data-src="/">
+              <div class="radio">
+                <input type="radio" name="payment" id="input-weipay" value="weipay">
+                <label class="pay_logo clickable" for="input-weipay"><img src="/" alt="微信支付" /></label>
+              </div>
+            </div>
+          </div>
+          <div class="text-grey">
+            <p>掃一掃，即可進行掃碼打賞哦</p>
+          </div>
         </div>
-        <div id="collapse2017" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2017">
-        <div class="panel-body">
-          <div class="collection">
-    
-    
-<a href="/2017/11/19/python_pachong/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2017-11-19T15:20:00.000Z" itemprop="datePublished">2017-11-19</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> python爬虫爬取ajax加载的动态内容
-</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  
-    
-    
-    
-<a href="/2017/11/19/pachong_luanma/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2017-11-19T14:13:00.000Z" itemprop="datePublished">2017-11-19</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> python使用爬虫获取json格式的网页，输出以及写入文件乱码
-</a>
 
-
-  
-    
-    
-    
-<a href="/2017/11/19/hexo_question/" class="collection-item" target="_blank" itemprop="url">
-  <time datetime="2017-11-19T14:13:00.000Z" itemprop="datePublished">2017-11-19</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> hexo搭建博客遇到的坑
-</a>
-
-
-  
-  
-    </div></div></div></section>
-  
-
-	    </div>
-  	</article>
-  	 	
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -557,6 +691,12 @@ $(function() {
 </script>
 
     
+    
+        
+    
+    <script defer type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=[object Object]"></script>
+
+
     
     
 
